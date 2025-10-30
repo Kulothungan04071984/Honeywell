@@ -126,7 +126,7 @@
                             }
 
                         }
-                                    </tbody>
+                    </tbody>
                     </table>
                     </<div>
                         </div>
@@ -149,7 +149,7 @@
         $('#FGNameText').val(selectedText); // Store text in hidden input
     });
     $('#ddlcustomers').on('change',function(){
-        debugger;
+      
         var Cusid=$('#ddlcustomers').val();
       //  alert(Cusid);
         $.ajax({
@@ -162,7 +162,7 @@
                   $('#ddlFgName').empty();
                 $.each(data,function(index,item)
                 {
-                    debugger;
+                   
                     $('#ddlFgName').append($('<option>',{
                         value:item.value,
                         text:item.text
